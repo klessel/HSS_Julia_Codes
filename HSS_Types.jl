@@ -16,7 +16,7 @@ end
 
 #Define node
 mutable struct Node{T1 <: Integer, T2 <: Number}
-    treeL::Union{Node,Leaf} #Union(Node{T1,T2},Leaf{T1,T2}) doesn't work for some reason
+    treeL::Union{Node,Leaf} 
     treeR::Union{Node,Leaf}
     m::T1
     n::T1
